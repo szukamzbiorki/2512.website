@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'FM';
+    src: url('FM.otf');
+}
+
+:root{
+    --space: 8px;
+}
+
+p{
+    margin-top: var(--space);
+    margin-bottom: calc(var(--space) / 2);
+}
+
+body{
+    font-family: 'FM';
+    width: 100vw;
+    height: 100vh;
+    padding: var(--space);
+    padding-top: calc(var(--space) / 2);
+    margin: 0;
+    font-size: 14px;
+}
+
+.wrapper{
+    max-width: 50%;
+}
+
+.title{
+    cursor: pointer;
+    margin-bottom: var(--space);
+}
+
+.show{
+    /* display: none; */
+}
+
+.submission-form{
+    padding: var(--space);
+    /* background-color: lightgrey; */
+    border: 1px black solid;
+}
+
+.submission-form *{
+    display: block;
+    width: calc(100% - var(--space));
+    border-radius: 0;
+    /* border: 1px solid black; */
+}
+
+.submission-form>input{
+    border: 1px solid black;
+    font-family: 'FM';
+}
+
+.submission-form>input:focus{
+    /* background-color: aqua; */
+    border-radius: 0;
+    border: 1px dashed blue;
+    outline: none;
+}
+
+.submission-form>textarea{
+    border: 1px solid black;
+    font-family: 'FM';
+}
+
+.submission-form>textarea:focus{
+    /* background-color: aqua; */
+    border-radius: 0;
+    border: 1px dashed blue;
+    outline: none;
+}
+
+.submit{
+    width: auto;
+    font-family: 'FM';
+    outline: none;
+    border: 1px black solid;
+    margin-top: var(--space);
+}
+
+.submissions-wrapper{
+    width: 100%;
+    margin-top: var(--space);
+}
+
+.submission{
+    margin-bottom: var(--space);
+    background-color: lightgrey;
+    padding: var(--space);
+}
+
+.sumbission-title{
+
+}
+
+.submission-name{
+    font-size: 80%;
+    color: blue;
+}
+
+.submission-content{
+
+}
+
+.submission-date{
+    font-size: 80%;
+    color: blue;
+}
+
