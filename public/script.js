@@ -2,7 +2,7 @@ let titlebox = document.querySelector(".title");
 let show = document.querySelector(".show");
 let submissionsWrapper = document.querySelector(".submissions-wrapper");
 
-const API_URL = 'http://localhost:5500/submissions';
+const API_URL = 'http://localhost:3000/submissions';
 
 let form = document.querySelector(".submission-form");
 

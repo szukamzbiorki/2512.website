@@ -2,7 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 
-const monk = require('monk')
+const monk = require('monk');
+
+const port = 3000;
 
 // Connection URL
 const url =  process.env.MONGO_URI || 'localhost:27017/submissions';
@@ -18,7 +20,7 @@ db.then(() => {
 const app = express();
 
 
-app.use('/static', express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 
 
 
@@ -52,6 +54,6 @@ app.get("/submissions", (req, res) => {
         })
 })
 
-app.listen(5500, () => {
-    console.log("listening on port 5500");
+app.listen(port, () => {
+    console.log(`listening on port ${port}`);
 })
