@@ -43,7 +43,6 @@ body{
 
 .issue{
     max-width: 100%;
-   
 }
 
 .issue>img{
@@ -55,5 +54,15 @@ body{
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 820px) {
+    .wrapper{
+        min-width: calc(100% - 2 * var(--space));
+    }
+
+    .issues-wrapper{
+        grid-template-columns: 1fr;
+    }
 }
 
