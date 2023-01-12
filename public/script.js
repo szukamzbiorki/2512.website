@@ -58,7 +58,7 @@ function showSubmissions(){
 
                 submissionTitle.textContent = submissionData.title;
                 submissionName.textContent = submissionData.name;
-                submissionContent.textContent = submissionData.content;
+                submissionContent.textContent = truncate(submissionData.content, 20);
                 submissionDate.textContent = new Date(submissionData.created);
 
                 submission.appendChild(submissionTitle);
@@ -69,4 +69,10 @@ function showSubmissions(){
                 submissionsWrapper.appendChild(submission);
             })
         });
+}
+
+function truncate(str, length) {
+    if (str.length > length) {
+      return str.slice(0, length) + '...';
+    } else return str;
 }

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'FM';
+    src: url('FM.otf');
+}
+
+:root{
+    --space: 8px;
+}
+
+p{
+    margin-top: var(--space);
+    margin-bottom: calc(var(--space) / 2);
+}
+
+body{
+    font-family: 'FM';
+    width: 100vw;
+    height: 100vh;
+    padding: var(--space);
+    padding-top: calc(var(--space) / 2);
+    margin: 0;
+    font-size: 14px;
+}
+
+.wrapper{
+    max-width: 50%;
+}
+
+.title{
+    cursor: pointer;
+    margin-bottom: var(--space);
+}
+
+.show{
+    /* display: none; */
+}
+
+.issues-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.issue{
+    max-width: 100%;
+   
+}
+
+.issue>img{
+    max-width: 100%;
+    border: black 1px solid;
+}
+
+.anostyle{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

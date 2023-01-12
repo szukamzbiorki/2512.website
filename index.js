@@ -20,7 +20,9 @@ db.then(() => {
 const app = express();
 
 
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'issues')));
+
+// app.use('/issues', express.static(path.join(__dirname, 'issues')));
 
 
 
