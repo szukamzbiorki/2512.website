@@ -22,6 +22,9 @@ const app = express();
 
 app.use('/', express.static(path.join(__dirname, 'issues')));
 
+
+app.use('/psss', express.static(path.join(__dirname, 'psss')));
+
 // app.use('/issues', express.static(path.join(__dirname, 'issues')));
 
 
